@@ -97,6 +97,7 @@ public final class NIOConnector extends Thread implements SocketConnector {
 							if (att != null && key.isValid() && key.isConnectable())
 							{
 								finishConnect(key, att);
+								System.out.println("======================nettty connection is invalid===============");
 							} else
 							{
 								key.cancel();

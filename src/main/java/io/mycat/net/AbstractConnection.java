@@ -99,6 +99,7 @@ public abstract class AbstractConnection implements NIOConnection {
 		this.lastWriteTime = startupTime;
 	}
 
+	@Override
 	public String getCharset() {
 		return charset;
 	}
